@@ -1,0 +1,29 @@
+#containerTotal{
+    display: flex;
+    height: 50vh;
+    width: 60vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    justify-content: space-around;
+    background-color: rgba(128, 128, 128, 0.288);
+    align-items: center;
+}
+.right-side-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 80%;
+    overflow-y: auto;
+}
+.containerPR{
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.imgCarac{
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ProdutosIndividuaisAparecendo {
+            background-color: turquoise;
+            height: 80vh;
+            width: 80vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 15px;
+            box-shadow: 2px 2px 60px turquoise;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='totalProdutoIndividual'>
+        <button class='btnFecharProdutoIndividual' id='btnFecharProdutoIndividual${produtos.id}'>X</button>
+
+        <div class='left-side'>
+            <span style='color:orange; '><a style='color:orange;' href='./index.html'>Início</a> / <a
+                    style='color:orange;' href='./smartphones.html'>Smartphones</a></span>
+
+            <div class="divImgProdutoIndividual">
+                <img src='${produtos.imagem}' style='height:300px;'>
+            </div>
+        </div>
+
+
+
+            <div class="caracteristicasProdutoIndividual">
+                <p class="nomeProdutoIndividual">
+                    ${produtos.nome}
+                </p>
+                <p class="marcaProdutoIndividual">
+                    ${produtos.marca}
+                </p>
+                <div class="estrelasProdutoIndividual">
+                </div>
+                <div class="descricaoProdutoIndividual">
+
+                </div>
+
+                <span class="precoProdutoIndividual">
+                    R$${produtos.preco}
+
+                </span>
+                <span class="semjurosProdutoIndividual">
+                    Em até <span class='txtsemjuros'> 10 X de R$${(produtos.preco/10).toFixed(3)}</span>
+                </span>
+            <div class="quantidadeProdutoIndividual">
+                <button class='btnMudarQuantProdutoIndividual'><img src='./Assets/botoes/addBlack.svg'></button>
+                <span>2</span>
+                <button class='btnMudarQuantProdutoIndividual'><img src='./Assets/botoes/removeBlack.svg'></button>
+
+            </div>
+                <div class="addToCartProdutoIndividual">
+                    <button class='btnAdicionarCarrinhoProdutoIndividual'>Adicionar Ao Carrinho</button>
+                </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>

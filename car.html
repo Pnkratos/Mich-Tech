@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #efefef;
+    }
+
+    button{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border: 2px solid orange;
+        border-radius: 10px;
+        padding: -1px;
+        overflow: hidden;
+        width: 100px;
+        height: 30px;
+    }
+    .lugImg{
+        width: 25px;
+        height: 30px;
+        background-color: orange;
+        transition: all .3s ease;
+        z-index: 2;
+    }
+    p{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-100%,-100%);
+    }
+
+    button:hover .lugImg{
+        width: 100px;
+    }
+
+
+
+
+</style>
+
+<body>
+
+    <button>
+        <div class="lugImg">
+            <!-- <img src="./botoes/add.svg" alt=""> -->
+        </div>
+
+        <p>Adicionar</p>
+    </button>
+
+</body>
+
+</html>

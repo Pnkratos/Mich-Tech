@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich Tech</title>
+    <link rel="stylesheet" href="./Style/Style.css">
+    <link rel="shortcut icon" href="./favicon_io (1)/favicon.ico" type="image/x-icon">
+</head>
+
+<body id="mask"><!--aqui está o topo-->
+    <header id="topo">
+        <nav>
+                <a href="index.html" style="margin-top: -10px;"><img src="./Logo.png" height="50vh" alt=""></a>
+
+
+                    <ul class="linksPagina">
+                        <li><a href="smartphones.html" class="linksTopo">  Smartphones</a> <div></div> </li>
+                        <li> <a href="informatica.html" class="linksTopo">  Informatica </a> <div></div> </li>
+                        <li> <a href="Tv.html" class="linksTopo">  Smart TV </a> <div></div></li>
+                        <li> <a href="Tv.html" class="linksTopo">  Sobre nós  </a> <div></div> </li>
+                    </ul>
+                
+
+                <div class="bape">
+                    <div class="barraUl">
+                        <div class="barraPesquisa" id="barraPesquisa">
+                            <input type="search" id="inputSearch" placeholder="Iphone 15 Pro Max">
+                            <button id="butPesquisar"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                    viewBox="0 -960 960 960" width="24">
+                                    <path
+                                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                                </svg></button>
+                        </div>
+                    </div>                
+
+                </div>
+
+            
+
+
+
+            <div class="pessoal">
+                <button id="btnAbrirCarrinho" style="cursor: pointer;"><img
+                        src="./botoes/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="testeIMD"><span
+                        id="spanQuant"></span></button>
+                <button id="btnApareceProfile" style="cursor: pointer;"><img src="./botoes/person.svg"
+                        alt=""></button>
+            </div>
+        </nav>
+    </header>
+
+                    
+
+
+    <div class="banerInicio">
+
+    </div>
+
+
+    <section class="primeiroContato">
+        <div class="lugChamativos">
+            <div class="chamativos" id="chamativo2">
+                <img src="./informatica/tecladok95.png" alt="" class="imgChamativo" id="tecladok95">
+                <div class="carac">
+                    <p class="cateG">Informática</p>
+                    <p class="nomeLug">
+                    <p class="nomeP1">PERIFÉRICOS</p>
+                    <p class="nomeP1">GAMERS</p>
+                    </p>
+                    <a class="shopNow" href="informatica.html">Veja Mais</a>
+                </div>
+            </div>
+
+            <div class="chamativos" id="chamativo">
+                <img src="./smartphones/samsung-galaxy-m51-3.png" alt="" class="imgChamativo" id="imgChamativo">
+                <div class="carac">
+                    <p class="cateG">Smartphones</p>
+                    <p class="nomeLug">
+                    <p class="nomeP1">SMARTPHONES DE</p>
+                    <p class="nomeP1">ULTIMA GERAÇÃO</p>
+                    </p>
+
+                    <a class="shopNow" href="smartphones.html">Veja Mais</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Aqui é o menuLinks-->
+    <div class="menuLinks" id="menuLinks">
+        <div class="contMenuLinks">
+            <div class="menuLinkTopo">
+                <img src="./Logo.png" style="height: 10vh;" alt="">
+                <button id="btnFecharMenu" style="cursor: pointer;"><img
+                        src="./botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+            </div>
+
+
+            <div class="links">
+                <a href="informatica.html">Informatica</a>
+                <a href="smartphones.html">Smartphones</a>
+                <a href="eletrodomestico.html">Eletrodoméstico</a>
+                <a href="Tv.html">Smart Tvs</a>
+            </div>
+
+
+
+            <a href="" class="cadastro">Não tem cadastro? <span style="color: orange;">clique aqui!</span></a>
+        </div>
+    </div>
+
+    <!--Aqui está o menu do Perfil-->
+    <div class="menuProfile" id="menuDesaparecido">
+        <div class="contMenuProfile">
+            <div class="topoMenuProfile">
+                <img src="./Logo.png" style="height: 10vh;" alt="" srcset="">
+                <button style="margin-top: 20px; cursor: pointer;" id="btnFecharMenuProfile"><img
+                        src="./botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+            </div>
+
+            <div class="dadosMenuProfile">
+                <label for="email">Email</label>
+                <input type="email" name="inputProfile" id="email" class="inputMenuProfile">
+                <label for="senha">Senha</label>
+                <input type="password" name="inputProfile" id="senha" class="inputMenuProfile">
+            </div>
+
+            <div class="botoesMenuProfile">
+                <button id="loginMenuProfile">Entrar</button><br>
+                <a href="cadastro.html" style="text-decoration: none;color: white; margin-bottom: 20px;">Não tem Login?
+                    <span style="color: orange;">Cadastre-se</span> </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Aqui está o carrinho-->
+    <div class="menuCarrinho" id="menuCarrinho">
+
+        <div class="contMenuCarrinho">
+            <div class="topoCarrinho" style="margin-bottom: 10px;">
+                <p class="tituloTopoCarrinho">CARRINHO</p>
+                <button id="btnFecharCarrinho" style="cursor: pointer;"><img
+                        src="./botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+            </div>
+
+            <div class="lugarProdutoCarrinho" id="lugarProdutoCarrinho">
+            </div>
+            <div class="finalcompra" style="margin-top: 10px;">
+                <span id="txtPreco" style="color: white; margin-right: 10px;"></span>
+                <button id="finalizarCompra" style="color: white;">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <img src="./Baner 3.PNG" alt="" srcset="" style="scale: 0.8; border-radius: 20px; " id="baner1">
+
+
+
+    <!--Aqui estão os lugares da renderização-->
+    <section class="secaoProduto gallery-wrapper" id="secaoProduto">
+        <label for="Smartphones1" id="lugtitusmar" style="align-self: flex-start;"></label>
+        <div class="productComBotoes" style="display: flex;">
+            <button id="voltarSlide1" class="btnSlide arrow-left control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                    style="rotate: 180deg;"></button>
+            <div class="containerProdutos" id="Smartphones1"></div>
+            <button id="passarSlide1" class="btnSlide arrow-right control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div>
+    </section>
+
+
+
+    <img src="./Baner 3.PNG" alt="" srcset="" style="scale: 0.8; border-radius: 20px;" id="baner2">
+
+
+    <section class="secaoProduto gallery-wrapper">
+        <label for="informatica" id="lugtituin" style="align-self: flex-start;"></label>
+        <div class="productComBotoes" style="display: flex;">
+            <button id="voltarSlide2" class="btnSlide arrow-left control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                    style="rotate: 180deg;"></button>
+            <div class="containerProdutos gallery" id="informatica"></div>
+            <button id="passarSlide2" class="btnSlide arrow-right control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div>
+    </section>
+
+
+    <img src="./Baner 3.PNG" alt="" srcset="" style="scale: 0.8 ; border-radius: 20px;" id="baner3">
+
+
+    <section class="secaoProduto gallery-wrapper" style="height: 65vh;">
+        <label for="Tvs" id="lugtitutv" style="align-self: flex-start;"></label>
+        <div class="productComBotoes" style="display: flex;">
+            <button id="voltarSlide3" class="btnSlide arrow-left control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                    style="rotate: 180deg;"></button>
+            <div class="containerProdutos" id="Tvs"></div>
+            <button id="passarSlide3" class="btnSlide arrow-right control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div>
+    </section>
+
+
+    <img src="./Baner 3.PNG" alt="" srcset="" style="scale: 0.8; border-radius: 20px;" id="baner4">
+    <section class="secaoProduto gallery-wrapper">
+        <label for="Tvs" id="lugtituele" style="align-self: flex-start;"></label>
+        <div class="productComBotoes" style="display: flex;">
+            <button id="voltarSlide4" class="btnSlide arrow-left control"><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                    style="rotate: 180deg;"></button>
+            <div class="containerProdutos" id="eletro"></div>
+            <button id="passarSlide4" class="btnSlide arrow-right control "><img
+                    src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" alt=""></button>
+        </div>
+    </section>
+
+    <div class="lugQualidades">
+        <div class="qualidade" id="entRap">
+            <img src="./botoes/rapido.svg" alt="" class="imgQuali">
+            <div class="tituloQualidades">
+                <p class="caracteristicasQualidadesTitle">ENTREGA RÁPIDA </p>
+                <p class="caracteristicasQualidades">Entrega para o Brasil todo em 48 Horas</p>
+            </div>
+
+        </div>
+
+
+        <div class="qualidade" id="suporte">
+            <img src="./botoes/suporte.svg" alt="" class="imgQuali">
+            <div class="tituloQualidades">
+                <p class="caracteristicasQualidadesTitle">SUPORTE ONLINE</p>
+                <p class="caracteristicasQualidades">Suporte 24 horas por dia</p>
+            </div>
+
+        </div>
+
+
+        <div class="qualidade" id="cashback">
+            <img src="./botoes/cashback.svg" alt="" class="imgQuali">
+            <div class="tituloQualidades">
+                <p class="caracteristicasQualidadesTitle">CASHBACK</p>
+                <p class="caracteristicasQualidades">Compre e tenha um Cashback de até 10%</p>
+            </div>
+
+        </div>
+
+
+        <div class="qualidade" id="seguro">
+            <img src="./botoes/seguro.svg" alt="" class="imgQuali">
+            <div class="tituloQualidades">
+                <p class="caracteristicasQualidadesTitle">SEGURO</p>
+                <p class="caracteristicasQualidades">Site Seguro e Confiável</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <img src="./Logo.png" alt="" class="imgLogo">
+
+        <div class="telefones">
+            <h3 class="titleRodape">Fale Conosco</h3>
+            <div class="btnsTelefones">
+                <span class="contatos"><img src="./botoes/whatsapp.svg" alt="" class="imgContatos"> (11)
+                    97628-7785</span>
+                <span class="contatos"><img src="./botoes/phone-solid.svg" alt="" class="imgContatos"> (11)
+                    2747-1162</span>
+                <div class="redes">
+                    <span class="contatos contatos2"><img src="./botoes/instagram.svg" alt=""
+                            class="imgContatos"></span>
+                    <span class="contatos contatos2"><img src="./botoes/youtube.svg" alt=""
+                            class="imgContatos"></span>
+                    <span class="contatos contatos2"><img src="./botoes/envelope-solid.svg" alt=""
+                            class="imgContatos"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="horAtendimento">
+            <h3 class="titleRodape">Horario de Atendimento</h3>
+            seg a sex das 07h às 18h
+        </div>
+
+        <div class="formaPagamento">
+            <h3 class="titleRodape">Formas de Pagamento</h3>
+            <div class="btnsFormPagamento">
+                <span class="contatos"><img src="./botoes/cc-mastercard.svg" alt="" class="imgContatos"></span>
+                <span class="contatos"><img src="./botoes/cc-visa.svg" alt="" class="imgContatos"></span>
+                <span class="contatos"><img src="./botoes/paypal.svg" alt="" class="imgContatos"></span>
+                <span class="contatos"><img src="./botoes/pix.svg" alt="" class="imgContatos"></span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./Script/main.js"></script>
+</body>
+
+</html>

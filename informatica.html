@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mich Tech | Informática</title>
+    <link rel="stylesheet" href="./Style/informatica.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header id="topo">
+        <nav>
+                <a href="index.html" style="margin-top: -10px;"><img src="./Logo.png" height="50vh" alt=""></a>
+
+
+                    <ul class="linksPagina">
+                        <li><a href="smartphones.html" class="linksTopo">  Smartphones</a> <div></div> </li>
+                        <li> <a href="informatica.html" class="linksTopo">  Informatica </a> <div></div> </li>
+                        <li> <a href="Tv.html" class="linksTopo">  Smart TV </a> <div></div></li>
+                        <li> <a href="Tv.html" class="linksTopo">  Sobre nós  </a> <div></div> </li>
+                    </ul>
+                
+
+                <div class="bape">
+                    <div class="barraUl">
+                        <div class="barraPesquisa" id="barraPesquisa">
+                            <input type="search" id="inputSearch" placeholder="Iphone 15 Pro Max">
+                            <button id="butPesquisar"><svg xmlns="http://www.w3.org/2000/svg" height="24"
+                                    viewBox="0 -960 960 960" width="24">
+                                    <path
+                                        d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                                </svg></button>
+                        </div>
+                    </div>                
+
+                </div>
+
+            
+
+
+
+            <div class="pessoal">
+                <button id="btnAbrirCarrinho" style="cursor: pointer;"><img
+                        src="./botoes/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="testeIMD"><span
+                        id="spanQuant"></span></button>
+                <button id="btnApareceProfile" style="cursor: pointer;"><img src="./botoes/person.svg"
+                        alt=""></button>
+            </div>
+        </nav>
+    </header>
+
+                    
+
+
+    <div class="banerInicio">
+
+    </div>
+
+
+
+    <!--Aqui está o menu do Perfil-->
+    <div class="menuProfile" id="menuDesaparecido">
+        <div class="contMenuProfile">
+            <div class="topoMenuProfile">
+                <img src="./Logo.png" style="height: 10vh;" alt="" srcset="">
+                <button style="margin-top: 20px; cursor: pointer;" id="btnFecharMenuProfile"><img
+                        src="./botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+            </div>
+
+            <div class="dadosMenuProfile">
+                <label for="email">Email</label>
+                <input type="email" name="inputProfile" id="email" class="inputMenuProfile">
+                <label for="senha">Senha</label>
+                <input type="password" name="inputProfile" id="senha" class="inputMenuProfile">
+            </div>
+
+            <div class="botoesMenuProfile">
+                <button id="loginMenuProfile">Entrar</button><br>
+                <a href="cadastro.html" style="text-decoration: none;color: white; margin-bottom: 20px;">Não tem Login?
+                    <span style="color: orange;">Cadastre-se</span> </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Aqui está o carrinho-->
+    <div class="menuCarrinho" id="menuCarrinho">
+
+        <div class="contMenuCarrinho">
+            <div class="topoCarrinho" style="margin-bottom: 10px;">
+                <p class="tituloTopoCarrinho">CARRINHO</p>
+                <button id="btnFecharCarrinho" style="cursor: pointer;"><img
+                        src="./botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+            </div>
+
+            <div class="lugarProdutoCarrinho" id="lugarProdutoCarrinho">
+            </div>
+            <div class="finalcompra" style="margin-top: 10px;">
+                <span id="txtPreco" style="color: white; margin-right: 10px;"></span>
+                <button id="finalizarCompra" style="color: white;">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tete">
+        
+    </div>
+
+    
+    <!--Aqui estão os lugares da renderização-->
+    <main>
+
+        <section class="filtros" id="filtros">
+            <h2 class="titulos_filtros" style="text-align: center;">Marcas</h2>
+            <div class="filtro-marca">
+
+                <span class="inpu_label"><input type="radio" name="marca" value="1" id="1"><label
+                        for="1">Samsung</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="2" id="2"><label
+                        for="2">Lenovo</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="3" id="3"><label
+                        for="3">Logitech</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="4" id="4"><label
+                        for="4">Epson</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="5" id="5"><label
+                        for="5">JBL</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="6" id="6"><label
+                        for="6">Asus</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="7" id="7"><label
+                        for="7">Western Digital</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="8" id="8"><label
+                        for="8">LG</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="9" id="9"><label
+                        for="9">Acer</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="10" id="10"><label
+                        for="10">Apple</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="11" id="11"><label
+                        for="11">Canon</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="12" id="12"><label
+                        for="12">SanDisk</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="13" id="13"><label
+                        for="13">Linksys</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="14" id="14"><label
+                        for="14">Microsoft</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="15" id="15"><label
+                        for="15">Dell</label></span>
+                <span class="inpu_label"><input type="radio" name="marca" value="16" id="16"><label
+                        for="16">Adobe  </label></span>
+
+                <button type="submit" id="filtrar-marca">Filtrar <img src="./botoes/filter-solid (1).svg" alt=""
+                        style="height: 15px;"></button>
+
+            </div>
+
+
+        </section>
+
+        <section class="secaoProduto" id="secao">
+            <a href=""><label for="Informatica" id="lugtituinfo"></label></a>
+            <div class="containerProdutos" id="Informatica"></div>
+        </section>
+        <button style="cursor: pointer;align-self: flex-end; margin-bottom: 50px;margin-right: 50px;background-color: antiquewhite;border-radius: 100%; padding: 10px; transition: all 2s;position: sticky; bottom: 0;">
+            <a href="#titsec"><img src="./botoes/arrow_forward_ios_FILL0_wght400_GRAD0_opsz24.svg" style="transform: rotate(-90deg);"></a>
+
+        </button>
+    </main>
+
+    <footer class="rodape">
+        <img src="./Logo.png" alt="" class="imgLogo">
+
+        <div class="telefones">
+            <h3 class="titleRodape">Fale Conosco</h3>
+            <div class="btnsTelefones">
+                <span class="contatos"><img src="./botoes/whatsapp.svg" alt="" class="imgContatos"> (11)
+                    97628-7785</span>
+                <span class="contatos"><img src="./botoes/phone-solid.svg" alt="" class="imgContatos"> (11)
+                    2747-1162</span>
+                <div class="redes">
+                    <span class="contatos contatos2"><img src="./botoes/instagram.svg" alt=""
+                            class="imgContatos"></span>
+                    <span class="contatos contatos2"><img src="./botoes/youtube.svg" alt=""
+                            class="imgContatos"></span>
+                    <span class="contatos contatos2"><img src="./botoes/envelope-solid.svg" alt=""
+                            class="imgContatos"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="horAtendimento">
+            <h3 class="titleRodape">Horario de Atendimento</h3>
+            seg a sex das 07h às 18h
+        </div>
+
+        <div class="formaPagamento">
+            <h3 class="titleRodape">Formas de Pagamento</h3>
+            <div class="btnsFormPagamento">
+                <span class="contatos"><img src="./botoes/cc-mastercard.svg" alt="" class="imgContatos"></span>
+                <span class="contatos"><img src="./botoes/cc-visa.svg" alt="" class="imgContatos"></span>
+                <span class="contatos"><img src="./botoes/paypal.svg" alt="" class="imgContatos"></span>
+                <span class="contatos"><img src="./botoes/pix.svg" alt="" class="imgContatos"></span>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script type="module" src="./Script/informatica.js"></script>
+</body>
+</html>

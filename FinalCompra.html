@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="./Style/smartphones.css">
+    <link rel="stylesheet" href="./Style/FinalCompra.css">
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <body>
+        <header id="topo">
+            <nav>
+                    <a href="index.html" style="margin-top: -10px;"><img src="./Logo.png" height="50vh" alt=""></a>
+    
+                    <h1 class="titleContent">Checkout</h1>
+                <div class="pessoal">
+                    <button id="btnAbrirCarrinho" style="cursor: pointer;"><img
+                            src="./botoes/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" alt="" id="testeIMD"><span
+                            id="spanQuant"></span></button>
+                    <button id="btnApareceProfile" style="cursor: pointer;"><img src="./botoes/person.svg"
+                            alt=""></button>
+                </div>
+            </nav>
+        </header>
+
+        <!--Aqui está o menu do Perfil-->
+        <div class="menuProfile" id="menuDesaparecido">
+
+            <div class="topoMenuProfile">
+                <img src="./Logo.png" style="height: 10vh;" alt="" srcset="">
+                <button style="margin-top: 20px; cursor: pointer;" id="btnFecharMenuProfile"><img
+                        src="./botoes/close_FILL1_wght400_GRAD0_opsz24.svg" alt=""></button>
+            </div>
+
+            <div class="dadosMenuProfile">
+                <label for="email">Email</label>
+                <input type="email" name="inputProfile" id="email" class="inputMenuProfile">
+                <label for="senha">Senha</label>
+                <input type="password" name="inputProfile" id="senha" class="inputMenuProfile">
+            </div>
+
+            <div class="botoesMenuProfile">
+                <button id="loginMenuProfile">Entrar</button><br>
+                <a href="cadastro.html" style="text-decoration: none;color: white; margin-bottom: 20px;">Não tem Login
+                    <span style="color: orange;">Cadastre-se</span> </a>
+            </div>
+        </div>
+
+
+        <div class="contentPrincipal">
+            <div class="juntaTudo">
+                <div class="contentCheckout" id="contentCheckout">
+
+                    
+                </div>
+
+                <div class="dadosCartaoProduto">
+                    <img src="./botoes/botoesCheckout/cartao.png" alt="" class="cartao">
+
+                    <div class="dadosCartao">
+
+                        <div class="nomeCartao">
+                            <input type="text" id="nome" name="nome" required placeholder="Nome no Cartão"
+                                class="inputsCartao">
+                        </div>
+
+                        <div class="numeroCartao">
+                            <input type="text" id="numero" name="numero" required maxlength="19"
+                                placeholder="Número do Cartão" class="inputsCartao">
+                        </div>
+
+                        <div class="cvvData">
+
+                            <div class="data">
+                                <input type="text" id="validade" name="validade" placeholder="MM/AA" required
+                                    maxlength="5" class="inputsCartao">
+                            </div>
+
+                            <div class="cvv">
+                                <input type="text" id="cvv" name="cvv" maxlength="3" required placeholder="CVV"
+                                    class="inputsCartao">
+                            </div>
+
+                        </div>
+                    </div>
+
+                        <div class="descontos">
+                            <div class="lugDescontos">
+                                <span>Preço Bruto</span>
+                                <span id="precoBruto"></span>
+                            </div>
+
+                            <div class="lugDescontos">
+                                <span>Descontos</span>
+                                <span id="descontos">R$ 0</span>
+                            </div>
+
+                            <div class="lugDescontos">
+                                <span>Frete</span>
+                                <span id="Frete"></span>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="precoTotalCheckout ">
+                            <span>Total</span>
+                            <span id="totalPreco"></span>
+                        </div>
+
+                        <button class="btnPagar" id="btnPagar">Pagar</button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </body>
+    <script type="module" src="././Script/FinalCompra.js"></script>
+
+</html>
